@@ -21,7 +21,7 @@ def discover(timeout=2):
             if data == REPLY:
                 peers.append(addr[0])
         except socket.timeout:
-            break
+            continue
         except Exception:
             pass
 
